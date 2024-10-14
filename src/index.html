@@ -1,0 +1,1475 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="./output.css" rel="stylesheet" />
+
+    <link
+      href="https://cdn.jsdelivr.net/npm/flowbite@2.5.2/dist/flowbite.min.css"
+      rel="stylesheet"
+    />
+
+    <script src="https://unpkg.com/@phosphor-icons/web"></script>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Noto+Serif:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Noto+Serif:ital,wght@0,100..900;1,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/css/splide.min.css"
+    />
+  </head>
+  <body>
+    <!-- Navbar -->
+    <div class="block bg-[#00B2AE]">
+      <div
+        class="px-10 md:px-0 md:container m-auto flex justify-between items-center py-3"
+      >
+        <img
+          src="assets/images/logo-small.svg"
+          alt="logo"
+          class="block md:hidden"
+        />
+        <img
+          src="assets/images/logo-medium.svg"
+          alt="logo"
+          class="hidden md:block"
+        />
+
+        <button
+          id="dropdownDefaultButton"
+          data-dropdown-toggle="dropdown"
+          class="text-[#686868] bg-gray-50 focus:ring-4 focus:outline-none focus:ring-gray-400 font-medium rounded-full text-xs px-5 py-2.5 text-center inline-flex items-center"
+          type="button"
+        >
+          <img
+            src="assets/images/language-skill.png"
+            alt="language-skill"
+            class="me-1"
+          />
+          ID
+          <svg
+            class="w-2.5 h-2.5 ms-3"
+            aria-hidden="true"
+            xmlns="http://www.w3.org/2000/svg"
+            fill="none"
+            viewBox="0 0 10 6"
+          >
+            <path
+              stroke="currentColor"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              stroke-width="2"
+              d="m1 1 4 4 4-4"
+            />
+          </svg>
+        </button>
+
+        <!-- Dropdown menu -->
+        <div
+          id="dropdown"
+          class="z-10 hidden bg-white divide-y divide-gray-100 rounded-lg shadow w-fit dark:bg-gray-700"
+        >
+          <ul
+            class="py-2 text-sm text-gray-700 hover:text-[#686868] font-[poppins]dark:text-gray-200"
+            aria-labelledby="dropdownDefaultButton"
+          >
+            <li>
+              <a href="#" class="block px-4 py-2 hover:bg-gray-100"
+                >Indonesia</a
+              >
+            </li>
+            <li>
+              <a href="#" class="block px-4 py-2 hover:bg-gray-100">English</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <!-- End Navbar -->
+
+    <!-- Jumbotron -->
+    <div
+      class="block md:hidden bg-[url('assets/images/home-banner-mobile.png')] h-[606px] bg-cover px-10 mt-8 relative"
+    >
+      <div class="flex gap-2 flex-col">
+        <h4 class="text-[#FD8413] font-['Noto_Serif'] font-bold text-lg">
+          Bali Home Lab
+        </h4>
+        <h1 class="text-[#006D78] font-['Noto_Serif'] font-black text-[32px]">
+          24/7 <span class="text-[#FD8413]">Home Lab</span> Check Service
+        </h1>
+      </div>
+      <h3 class="text-[#707070] font-['Noto_Serif'] text-[18px] font-semibold">
+        Get Your Lab Tests Done from the Comfort of Your Home
+      </h3>
+
+      <button
+        type="button"
+        class="text-white font-['Noto_Serif'] font-medium rounded-full text-lg px-5 py-2.5 absolute left-0 right-0 w-10/12 bg-orange-500 hover:bg-orange-600"
+        style="margin-inline: auto; bottom: -20px"
+      >
+        Order Now
+      </button>
+    </div>
+
+    <div
+      class="hidden md:block bg-[url('assets/images/bg-jumbotron-desktop.png')] bg-cover bg-center py-[68px]"
+    >
+      <div class="container m-auto h-[598px]">
+        <div class="flex gap-5 flex-col w-1/2">
+          <h4 class="text-[#FD8413] font-['Noto_Serif'] font-bold text-4xl">
+            Bali Home Lab
+          </h4>
+          <h1
+            class="text-[#006D78] font-['Noto_Serif'] font-black text-[54px] leading-[118%]"
+          >
+            24/7 <span class="text-[#FD8413]">Home Lab</span> Check Service
+          </h1>
+        </div>
+        <h3
+          class="text-[#707070] font-['Noto_Serif'] text-4xl font-semibold w-1/2 mt-5"
+        >
+          Get Your Lab Tests Done from the Comfort of Your Home
+        </h3>
+
+        <button
+          type="button"
+          class="text-white font-['Noto_Serif'] font-medium rounded-full text-lg px-5 py-2.5 mt-24 w-[268px] bg-orange-500 hover:bg-orange-600"
+        >
+          Order Now
+        </button>
+      </div>
+    </div>
+    <!-- End Jumbotron -->
+
+    <!-- Quote -->
+    <div
+      class="py-16 md:py-20 bg-[url('assets/images/bg-quote-mobile.png')] md:bg-[url('assets/images/bg-quote-desktop.png')] bg-cover bg-center"
+    >
+      <div class="container m-auto">
+        <div class="flex flex-col md:flex-row px-10">
+          <div
+            class="flex bg-white px-8 py-10 md:w-4/6 md:h-auto md:items-center"
+          >
+            <p
+              class="text-[#128894] text-center font-['Noto_Serif'] text-base md:text-xl font-medium"
+            >
+              Take control of your health check without leaving home. Our
+              homecare lab service offers comprehensive laboratory tests,
+              personalized for your needs, right where you are most comfortable
+              – your home.
+            </p>
+          </div>
+          <img
+            src="assets/images/img-quote.png"
+            alt="img-quote"
+            class="h-[240px] sm:h-full md:h-[386px] w-full md:w-5/6 object-cover"
+          />
+        </div>
+      </div>
+    </div>
+    <!-- End Quote -->
+
+    <!-- Laboratory Check Package -->
+    <div
+      class="block md:hidden px-10 py-10 bg-[url('assets/images/bg-lab-check-mobile.png')] bg-cover bg-center"
+    >
+      <h2
+        class="text-white text-center font-['Noto_Serif'] text-[28px] font-bold"
+      >
+        Laboratory Check Package
+      </h2>
+      <div class="flex flex-col gap-6 mt-7">
+        <div class="flex w-full gap-8">
+          <div class="flex flex-col gap-2 w-6/12">
+            <img
+              data-tooltip-placement="bottom"
+              data-tooltip-target="tooltip-general-mcu"
+              src="assets/images/icon-general-mcu.svg"
+              alt="icon-general-mcu"
+            />
+            <div
+              id="tooltip-general-mcu"
+              role="tooltip"
+              class="absolute z-10 invisible inline-block px-6 py-6 transition-opacity duration-300 bg-white rounded-lg shadow-sm opacity-0 tooltip"
+            >
+              <div class="flex flex-col gap-4">
+                <h5
+                  class="text-[#128894] text-center font-['Noto_sans'] text-sm font-bold"
+                >
+                  General Medical Check-Up
+                </h5>
+                <div class="divide-[#128894] divide-solid border w-full"></div>
+                <ul class="ps-5 list-disc">
+                  <li class="text-[#3D3B3B] font-['Noto_Serif'] text-xs">
+                    Comprehensive blood and urine tests to assess your overall
+                    health.
+                  </li>
+                  <li class="text-[#3D3B3B] font-['Noto_Serif'] text-xs">
+                    Includes cholesterol levels, liver function, kidney
+                    function, and more.
+                  </li>
+                </ul>
+              </div>
+              <div class="tooltip-arrow" data-popper-arrow></div>
+            </div>
+            <p
+              class="text-white text-center font-['Noto_Serif'] text-sm font-bold"
+            >
+              General Medical Check-Up
+            </p>
+          </div>
+          <div class="flex flex-col gap-2 w-6/12">
+            <img
+              data-tooltip-placement="bottom"
+              data-tooltip-target="heart-health-screening"
+              src="assets/images/icon-heart-health-screening.svg"
+              alt="icon-general-mcu"
+            />
+            <div
+              id="heart-health-screening"
+              role="tooltip"
+              class="absolute z-10 invisible inline-block px-6 py-6 transition-opacity duration-300 bg-white rounded-lg shadow-sm opacity-0 tooltip"
+            >
+              <div class="flex flex-col gap-4">
+                <h5
+                  class="text-[#128894] text-center font-['Noto_sans'] text-sm font-bold"
+                >
+                  Heart Health Screening
+                </h5>
+                <div class="divide-[#128894] divide-solid border w-full"></div>
+                <ul class="ps-5 list-disc">
+                  <li class="text-[#3D3B3B] font-['Noto_Serif'] text-xs">
+                    Includes lipid profile, ECG, and blood pressure monitoring
+                  </li>
+                  <li class="text-[#3D3B3B] font-['Noto_Serif'] text-xs">
+                    Assess your risk for heart disease and keep your heart
+                    health
+                  </li>
+                </ul>
+              </div>
+              <div class="tooltip-arrow" data-popper-arrow></div>
+            </div>
+            <p
+              class="text-white text-center font-['Noto_Serif'] text-sm font-bold"
+            >
+              Heart Health Screening
+            </p>
+          </div>
+        </div>
+        <div class="flex w-full gap-8">
+          <div class="flex flex-col gap-2 w-6/12">
+            <img
+              data-tooltip-placement="bottom"
+              data-tooltip-target="covid-19_testing"
+              src="assets/images/icon-covid19.svg"
+              alt="icon-covid19"
+            />
+            <div
+              id="covid-19_testing"
+              role="tooltip"
+              class="absolute z-10 invisible inline-block px-6 py-6 transition-opacity duration-300 bg-white rounded-lg shadow-sm opacity-0 tooltip"
+            >
+              <div class="flex flex-col gap-4">
+                <h5
+                  class="text-[#128894] text-center font-['Noto_sans'] text-sm font-bold"
+                >
+                  COVID-19 Testing
+                </h5>
+                <div class="divide-[#128894] divide-solid border w-full"></div>
+                <ul class="ps-5 list-disc">
+                  <li class="text-[#3D3B3B] font-['Noto_Serif'] text-xs">
+                    PCR or Antigen tests to detect active infection
+                  </li>
+                  <li class="text-[#3D3B3B] font-['Noto_Serif'] text-xs">
+                    Antibody tests to check past exposure to the virus
+                  </li>
+                </ul>
+              </div>
+              <div class="tooltip-arrow" data-popper-arrow></div>
+            </div>
+            <p
+              class="text-white text-center font-['Noto_Serif'] text-sm font-bold"
+            >
+              COVID-19 Testing
+            </p>
+          </div>
+          <div class="flex flex-col gap-2 w-6/12">
+            <img
+              data-tooltip-placement="bottom"
+              data-tooltip-target="std_testing"
+              src="assets/images/icon-std.svg"
+              alt="icon-std"
+            />
+            <div
+              id="std_testing"
+              role="tooltip"
+              class="absolute z-10 invisible inline-block px-6 py-6 transition-opacity duration-300 bg-white rounded-lg shadow-sm opacity-0 tooltip"
+            >
+              <div class="flex flex-col gap-4">
+                <h5
+                  class="text-[#128894] text-center font-['Noto_sans'] text-sm font-bold"
+                >
+                  STD Testing
+                </h5>
+                <div class="divide-[#128894] divide-solid border w-full"></div>
+                <ul class="ps-5 list-disc">
+                  <li class="text-[#3D3B3B] font-['Noto_Serif'] text-xs">
+                    Discreet testing for sexually transmitted infections
+                  </li>
+                  <li class="text-[#3D3B3B] font-['Noto_Serif'] text-xs">
+                    Includes HIV, syphilis, gonorrhea, and other common STDs
+                  </li>
+                </ul>
+              </div>
+              <div class="tooltip-arrow" data-popper-arrow></div>
+            </div>
+            <p
+              class="text-white text-center font-['Noto_Serif'] text-sm font-bold"
+            >
+              STD Testing
+            </p>
+          </div>
+        </div>
+        <div class="flex w-full gap-8">
+          <div class="flex flex-col gap-2 w-6/12">
+            <img
+              data-tooltip-placement="bottom"
+              data-tooltip-target="diabetes_panel"
+              src="assets/images/icon-diabetes.svg"
+              alt="icon-diabetes"
+            />
+            <div
+              id="diabetes_panel"
+              role="tooltip"
+              class="absolute z-10 invisible inline-block px-6 py-6 transition-opacity duration-300 bg-white rounded-lg shadow-sm opacity-0 tooltip"
+            >
+              <div class="flex flex-col gap-4">
+                <h5
+                  class="text-[#128894] text-center font-['Noto_sans'] text-sm font-bold"
+                >
+                  Diabetes Panel
+                </h5>
+                <div class="divide-[#128894] divide-solid border w-full"></div>
+                <ul class="ps-5 list-disc">
+                  <li class="text-[#3D3B3B] font-['Noto_Serif'] text-xs">
+                    Includes fasting blood sugar, HbA1c, and glucose tolerance
+                    tests
+                  </li>
+                  <li class="text-[#3D3B3B] font-['Noto_Serif'] text-xs">
+                    Helps monitor and manage diabetes or prediabetes conditions
+                  </li>
+                </ul>
+              </div>
+              <div class="tooltip-arrow" data-popper-arrow></div>
+            </div>
+            <p
+              class="text-white text-center font-['Noto_Serif'] text-sm font-bold"
+            >
+              Diabetes Panel
+            </p>
+          </div>
+          <div class="flex flex-col gap-2 w-6/12">
+            <img
+              data-tooltip-placement="bottom"
+              data-tooltip-target="thyroid"
+              src="assets/images/icon-thyroid.svg"
+              alt="icon-thyroid"
+            />
+            <div
+              id="thyroid"
+              role="tooltip"
+              class="absolute z-10 invisible inline-block px-6 py-6 transition-opacity duration-300 bg-white rounded-lg shadow-sm opacity-0 tooltip"
+            >
+              <div class="flex flex-col gap-4">
+                <h5
+                  class="text-[#128894] text-center font-['Noto_sans'] text-sm font-bold"
+                >
+                  Thyroid Function Test
+                </h5>
+                <div class="divide-[#128894] divide-solid border w-full"></div>
+                <ul class="ps-5 list-disc">
+                  <li class="text-[#3D3B3B] font-['Noto_Serif'] text-xs">
+                    Includes TSH, T3, and T4 hormone tests.
+                  </li>
+                  <li class="text-[#3D3B3B] font-['Noto_Serif'] text-xs">
+                    Ideal for those with thyroid concerns or on thyroid
+                    medication.
+                  </li>
+                </ul>
+              </div>
+              <div class="tooltip-arrow" data-popper-arrow></div>
+            </div>
+            <p
+              class="text-white text-center font-['Noto_Serif'] text-sm font-bold"
+            >
+              Thyroid Function Test
+            </p>
+          </div>
+        </div>
+        <div class="flex w-full gap-8">
+          <div class="flex flex-col gap-2 w-6/12">
+            <img
+              data-tooltip-placement="bottom"
+              data-tooltip-target="allergy_testing"
+              src="assets/images/icon-allergy.svg"
+              alt="icon-allergy"
+            />
+            <div
+              id="allergy_testing"
+              role="tooltip"
+              class="absolute z-10 invisible inline-block px-6 py-6 transition-opacity duration-300 bg-white rounded-lg shadow-sm opacity-0 tooltip"
+            >
+              <div class="flex flex-col gap-4">
+                <h5
+                  class="text-[#128894] text-center font-['Noto_sans'] text-sm font-bold"
+                >
+                  Allergy testing
+                </h5>
+                <div class="divide-[#128894] divide-solid border w-full"></div>
+                <ul class="ps-5 list-disc">
+                  <li class="text-[#3D3B3B] font-['Noto_Serif'] text-xs">
+                    Identifies common allergens such as pollen, dust mites, and
+                    food allergies
+                  </li>
+                  <li class="text-[#3D3B3B] font-['Noto_Serif'] text-xs">
+                    Helpful for managing allergy symptoms and creating a
+                    treatment plan
+                  </li>
+                </ul>
+              </div>
+              <div class="tooltip-arrow" data-popper-arrow></div>
+            </div>
+            <p
+              class="text-white text-center font-['Noto_Serif'] text-sm font-bold"
+            >
+              Allergy testing
+            </p>
+          </div>
+          <div class="flex flex-col gap-2 w-6/12">
+            <img
+              data-tooltip-placement="bottom"
+              data-tooltip-target="Fecal Analysis"
+              src="assets/images/icon-fecal.svg"
+              alt="icon-fecal"
+            />
+            <div
+              id="Fecal Analysis"
+              role="tooltip"
+              class="absolute z-10 invisible inline-block px-6 py-6 transition-opacity duration-300 bg-white rounded-lg shadow-sm opacity-0 tooltip"
+            >
+              <div class="flex flex-col gap-4">
+                <h5
+                  class="text-[#128894] text-center font-['Noto_sans'] text-sm font-bold"
+                >
+                  Fecal Analysis
+                </h5>
+                <div class="divide-[#128894] divide-solid border w-full"></div>
+                <ul class="ps-5 list-disc">
+                  <li class="text-[#3D3B3B] font-['Noto_Serif'] text-xs">
+                    Fecal analysis detects infections, digestive issues,
+                    bleeding, and inflammation.
+                  </li>
+                  <li class="text-[#3D3B3B] font-['Noto_Serif'] text-xs">
+                    Key tests include stool culture, occult blood test, and
+                    parasite detection.
+                  </li>
+                </ul>
+              </div>
+              <div class="tooltip-arrow" data-popper-arrow></div>
+            </div>
+            <p
+              class="text-white text-center font-['Noto_Serif'] text-sm font-bold"
+            >
+              Fecal Analysis
+            </p>
+          </div>
+        </div>
+        <div class="flex w-full gap-8">
+          <div class="flex flex-col gap-2 w-6/12">
+            <img
+              data-tooltip-placement="bottom"
+              data-tooltip-target="sputum_analysis"
+              src="assets/images/icon-sputum.svg"
+              alt="icon-sputum"
+            />
+            <div
+              id="sputum_analysis"
+              role="tooltip"
+              class="absolute z-10 invisible inline-block px-6 py-6 transition-opacity duration-300 bg-white rounded-lg shadow-sm opacity-0 tooltip"
+            >
+              <div class="flex flex-col gap-4">
+                <h5
+                  class="text-[#128894] text-center font-['Noto_sans'] text-sm font-bold"
+                >
+                  Sputum Analysis
+                </h5>
+                <div class="divide-[#128894] divide-solid border w-full"></div>
+                <ul class="ps-5 list-disc">
+                  <li class="text-[#3D3B3B] font-['Noto_Serif'] text-xs">
+                    Sputum analysis diagnoses respiratory infections, lung
+                    conditions, and cancer.
+                  </li>
+                  <li class="text-[#3D3B3B] font-['Noto_Serif'] text-xs">
+                    Important tests include sputum culture, gram stain, and
+                    cytology.
+                  </li>
+                </ul>
+              </div>
+              <div class="tooltip-arrow" data-popper-arrow></div>
+            </div>
+            <p
+              class="text-white text-center font-['Noto_Serif'] text-sm font-bold"
+            >
+              Sputum Analysis
+            </p>
+          </div>
+          <div class="flex flex-col gap-2 w-6/12">
+            <img
+              data-tooltip-placement="bottom"
+              data-tooltip-target="drugs_testing"
+              src="assets/images/icon-drugs.svg"
+              alt="icon-sputum"
+            />
+            <div
+              id="drugs_testing"
+              role="tooltip"
+              class="absolute z-10 invisible inline-block px-6 py-6 transition-opacity duration-300 bg-white rounded-lg shadow-sm opacity-0 tooltip"
+            >
+              <div class="flex flex-col gap-4">
+                <h5
+                  class="text-[#128894] text-center font-['Noto_sans'] text-sm font-bold"
+                >
+                  Drugs Testing
+                </h5>
+                <div class="divide-[#128894] divide-solid border w-full"></div>
+                <ul class="ps-5 list-disc">
+                  <li class="text-[#3D3B3B] font-['Noto_Serif'] text-xs">
+                    Detects drug use, ensuring workplace safety, monitoring
+                    substance abuse, managing medical treatments, and aiding in
+                    legal cases
+                  </li>
+                  <li class="text-[#3D3B3B] font-['Noto_Serif'] text-xs">
+                    Key tests include urine, blood, saliva, hair follicle, and
+                    sweat tests.
+                  </li>
+                </ul>
+              </div>
+              <div class="tooltip-arrow" data-popper-arrow></div>
+            </div>
+            <p
+              class="text-white text-center font-['Noto_Serif'] text-sm font-bold"
+            >
+              Drugs Testing
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div
+      class="hidden md:block py-10 bg-[url('assets/images/bg-lab-check-desktop.png')] bg-cover bg-center"
+    >
+      <div class="container m-auto">
+        <h2 class="text-white font-['Noto_Serif'] text-[40px] font-bold">
+          Laboratory Check Package
+        </h2>
+        <div class="flex items-center gap-7">
+          <div
+            class="flex pt-20 pb-7 px-[26px] rounded-[20px] bg-white flex-col items-center gap-[26px] self-stretch relative mt-[110px] w-full"
+          >
+            <h5
+              class="text-[#128894] text-center font-['Noto_Serif'] text-2xl font-bold"
+            >
+              General Medical Check-Up
+            </h5>
+            <div class="border border-solid border-[#128894] w-full"></div>
+            <ul class="ps-5 list-disc">
+              <li class="text-[#3D3B3B] font-['Noto_Serif'] text-base">
+                Comprehensive blood and urine tests to assess your overall
+                health.
+              </li>
+              <li class="text-[#3D3B3B] font-['Noto_Serif'] text-base">
+                Includes cholesterol levels, liver function, kidney function,
+                and more.
+              </li>
+            </ul>
+            <img
+              src="assets/images/icon-general-mcu-desk.svg"
+              alt="icon-general-mcu-desktop"
+              class="absolute left-0 right-0"
+              style="margin-inline: auto; top: -80px"
+            />
+          </div>
+          <div
+            class="flex pt-20 pb-7 px-[26px] rounded-[20px] bg-white flex-col items-center gap-[26px] self-stretch relative mt-[110px] w-full"
+          >
+            <h5
+              class="text-[#128894] text-center font-['Noto_Serif'] text-2xl font-bold"
+            >
+              Heart Health Screening
+            </h5>
+            <div class="border border-solid border-[#128894] w-full"></div>
+            <ul class="ps-5 list-disc">
+              <li class="text-[#3D3B3B] font-['Noto_Serif'] text-base">
+                Includes lipid profile, ECG, and blood pressure monitoring
+              </li>
+              <li class="text-[#3D3B3B] font-['Noto_Serif'] text-base">
+                Assess your risk for heart disease and keep your heart health
+              </li>
+            </ul>
+            <img
+              src="assets/images/icon-heart-health-screening-desk.svg"
+              alt="icon-general-mcu-desktop"
+              class="absolute left-0 right-0"
+              style="margin-inline: auto; top: -80px"
+            />
+          </div>
+        </div>
+        <div class="flex items-center gap-7">
+          <div
+            class="flex pt-20 pb-7 px-[26px] rounded-[20px] bg-white flex-col items-center gap-[26px] self-stretch relative mt-[120px] w-full"
+          >
+            <h5
+              class="text-[#128894] text-center font-['Noto_Serif'] text-2xl font-bold"
+            >
+              COVID-19 Testing
+            </h5>
+            <div class="border border-solid border-[#128894] w-full"></div>
+            <ul class="ps-5 list-disc">
+              <li class="text-[#3D3B3B] font-['Noto_Serif'] text-base">
+                PCR or Antigen tests to detect active infection
+              </li>
+              <li class="text-[#3D3B3B] font-['Noto_Serif'] text-base">
+                Antibody tests to check past exposure to the virus
+              </li>
+            </ul>
+            <img
+              src="assets/images/icon-covid19-desk.svg"
+              alt="icon-covid19"
+              class="absolute left-0 right-0"
+              style="margin-inline: auto; top: -80px"
+            />
+          </div>
+          <div
+            class="flex pt-20 pb-7 px-[26px] rounded-[20px] bg-white flex-col items-center gap-[26px] self-stretch relative mt-[120px] w-full"
+          >
+            <h5
+              class="text-[#128894] text-center font-['Noto_Serif'] text-2xl font-bold"
+            >
+              STD Testing
+            </h5>
+            <div class="border border-solid border-[#128894] w-full"></div>
+            <ul class="ps-5 list-disc">
+              <li class="text-[#3D3B3B] font-['Noto_Serif'] text-base">
+                Discreet testing for sexually transmitted infections
+              </li>
+              <li class="text-[#3D3B3B] font-['Noto_Serif'] text-base">
+                Includes HIV, syphilis, gonorrhea, and other common STDs
+              </li>
+            </ul>
+            <img
+              src="assets/images/icon-std-desk.svg"
+              alt="icon-std"
+              class="absolute left-0 right-0"
+              style="margin-inline: auto; top: -80px"
+            />
+          </div>
+        </div>
+        <div class="flex items-center gap-7">
+          <div
+            class="flex pt-20 pb-7 px-[26px] rounded-[20px] bg-white flex-col items-center gap-[26px] self-stretch relative mt-[110px] w-full"
+          >
+            <h5
+              class="text-[#128894] text-center font-['Noto_Serif'] text-2xl font-bold"
+            >
+              Diabetes Panel
+            </h5>
+            <div class="border border-solid border-[#128894] w-full"></div>
+            <ul class="ps-5 list-disc">
+              <li class="text-[#3D3B3B] font-['Noto_Serif'] text-base">
+                Includes fasting blood sugar, HbA1c, and glucose tolerance tests
+              </li>
+              <li class="text-[#3D3B3B] font-['Noto_Serif'] text-base">
+                Helps monitor and manage diabetes or prediabetes conditions
+              </li>
+            </ul>
+            <img
+              src="assets/images/icon-diabetes-desk.svg"
+              alt="icon-covid19"
+              class="absolute left-0 right-0"
+              style="margin-inline: auto; top: -80px"
+            />
+          </div>
+          <div
+            class="flex pt-20 pb-7 px-[26px] rounded-[20px] bg-white flex-col items-center gap-[26px] self-stretch relative mt-[110px] w-full"
+          >
+            <h5
+              class="text-[#128894] text-center font-['Noto_Serif'] text-2xl font-bold"
+            >
+              Thyroid Function Test
+            </h5>
+            <div class="border border-solid border-[#128894] w-full"></div>
+            <ul class="ps-5 list-disc">
+              <li class="text-[#3D3B3B] font-['Noto_Serif'] text-base">
+                Includes TSH, T3, and T4 hormone tests.
+              </li>
+              <li class="text-[#3D3B3B] font-['Noto_Serif'] text-base">
+                Ideal for those with thyroid concerns or on thyroid medication.
+              </li>
+            </ul>
+            <img
+              src="assets/images/icon-thyroid-desk.svg"
+              alt="icon-std"
+              class="absolute left-0 right-0"
+              style="margin-inline: auto; top: -80px"
+            />
+          </div>
+        </div>
+        <div class="flex items-center gap-7">
+          <div
+            class="flex pt-20 pb-7 px-[26px] rounded-[20px] bg-white flex-col items-center gap-[26px] self-stretch relative mt-[110px] w-full"
+          >
+            <h5
+              class="text-[#128894] text-center font-['Noto_Serif'] text-2xl font-bold"
+            >
+              Allergy Testing
+            </h5>
+            <div class="border border-solid border-[#128894] w-full"></div>
+            <ul class="ps-5 list-disc">
+              <li class="text-[#3D3B3B] font-['Noto_Serif'] text-base">
+                Identifies common allergens such as pollen, dust mites, and food
+                allergies
+              </li>
+              <li class="text-[#3D3B3B] font-['Noto_Serif'] text-base">
+                Helpful for managing allergy symptoms and creating a treatment
+                plan
+              </li>
+            </ul>
+            <img
+              src="assets/images/icon-allergy-desk.svg"
+              alt="icon-covid19"
+              class="absolute left-0 right-0"
+              style="margin-inline: auto; top: -80px"
+            />
+          </div>
+          <div
+            class="flex pt-20 pb-7 px-[26px] rounded-[20px] bg-white flex-col items-center gap-[26px] self-stretch relative mt-[110px] w-full"
+          >
+            <h5
+              class="text-[#128894] text-center font-['Noto_Serif'] text-2xl font-bold"
+            >
+              Fecal Analysis
+            </h5>
+            <div class="border border-solid border-[#128894] w-full"></div>
+            <ul class="ps-5 list-disc">
+              <li class="text-[#3D3B3B] font-['Noto_Serif'] text-base">
+                Fecal analysis detects infections, digestive issues, bleeding,
+                and inflammation.
+              </li>
+              <li class="text-[#3D3B3B] font-['Noto_Serif'] text-base">
+                Key tests include stool culture, occult blood test, and parasite
+                detection.
+              </li>
+            </ul>
+            <img
+              src="assets/images/icon-fecal-desk.svg"
+              alt="icon-std"
+              class="absolute left-0 right-0"
+              style="margin-inline: auto; top: -80px"
+            />
+          </div>
+        </div>
+        <div class="flex items-center gap-7">
+          <div
+            class="flex pt-20 pb-7 px-[26px] rounded-[20px] bg-white flex-col items-center gap-[26px] self-stretch relative mt-[110px] w-1/2"
+          >
+            <h5
+              class="text-[#128894] text-center font-['Noto_Serif'] text-2xl font-bold"
+            >
+              Sputum Analysis
+            </h5>
+            <div class="border border-solid border-[#128894] w-full"></div>
+            <ul class="ps-5 list-disc">
+              <li class="text-[#3D3B3B] font-['Noto_Serif'] text-base">
+                Sputum analysis diagnoses respiratory infections, lung
+                conditions, and cancer.
+              </li>
+              <li class="text-[#3D3B3B] font-['Noto_Serif'] text-base">
+                Important tests include sputum culture, gram stain, and
+                cytology.
+              </li>
+            </ul>
+            <img
+              src="assets/images/icon-sputum-desk.svg"
+              alt="icon-covid19"
+              class="absolute left-0 right-0"
+              style="margin-inline: auto; top: -80px"
+            />
+          </div>
+          <div
+            class="flex pt-20 pb-7 px-[26px] rounded-[20px] bg-white flex-col items-center gap-[26px] self-stretch relative mt-[110px] w-1/2"
+          >
+            <h5
+              class="text-[#128894] text-center font-['Noto_Serif'] text-2xl font-bold"
+            >
+              Drugs Testing
+            </h5>
+            <div class="border border-solid border-[#128894] w-full"></div>
+            <ul class="ps-5 list-disc">
+              <li class="text-[#3D3B3B] font-['Noto_Serif'] text-base">
+                Detects drug use, ensuring workplace safety, monitoring
+                substance abuse, managing medical treatments, and aiding in
+                legal cases
+              </li>
+              <li class="text-[#3D3B3B] font-['Noto_Serif'] text-base">
+                Key tests include urine, blood, saliva, hair follicle, and sweat
+                tests.
+              </li>
+            </ul>
+            <img
+              src="assets/images/icon-drugs-desk.svg"
+              alt="icon-std"
+              class="absolute left-0 right-0"
+              style="margin-inline: auto; top: -80px"
+            />
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- End Laboratory Check Package -->
+
+    <!-- Why Choose Us -->
+    <div
+      class="block md:hidden px-10 py-10 bg-[url('assets/images/bg-why-choose-us-mobile.png')] bg-cover bg-center"
+    >
+      <h2
+        class="text-[#006D78] text-center font-['Noto_Serif'] text-[28px] font-bold"
+      >
+        Why Choose Us?
+      </h2>
+      <img
+        src="assets/images/img-why-choose-us-mobile.svg"
+        alt="img-why-choose-us-mobile"
+        class="mt-10 w-full h-auto"
+      />
+    </div>
+
+    <div
+      class="hidden md:block py-10 bg-[url('assets/images/bg-why-choose-us-mobile.png')] bg-cover bg-center"
+    >
+      <div class="container m-auto">
+        <h2 class="text-[#006D78] font-['Noto_Serif'] text-[40px] font-bold">
+          Why Choose Us?
+        </h2>
+        <img
+          src="assets/images/img-why-choose-us-desk.svg"
+          alt="img-why-choose-us-mobile"
+          class="mt-10 w-full h-auto"
+        />
+      </div>
+    </div>
+
+    <!-- End Why Choose Us -->
+
+    <!-- How it Works -->
+    <div class="block md:hidden px-10 py-10 bg-white">
+      <h2
+        class="text-[#006D78] text-center font-['Noto_Serif'] text-[28px] font-bold"
+      >
+        How it works?
+      </h2>
+      <img
+        src="assets/images/img-how-it-works-mobile.svg"
+        alt="img-how-it-works-mobile"
+        class="mt-10 w-full h-auto"
+      />
+    </div>
+
+    <div class="hidden md:block px-10 md:px-[116px] py-10 bg-white">
+      <div class="container m-auto">
+        <h2 class="text-[#006D78] font-['Noto_Serif'] text-[40px] font-bold">
+          How it works?
+        </h2>
+        <img
+          src="assets/images/img-how-it-works-desk.svg"
+          alt="img-how-it-works-mobile"
+          class="mt-10 w-full h-auto"
+        />
+      </div>
+    </div>
+    <!-- End How it works -->
+
+    <!-- Testimonials -->
+    <div
+      class="block md:hidden py-10 bg-[url('assets/images/bg-testimonials-mobile.png')] bg-cover bg-center"
+    >
+      <h2
+        class="text-white text-center font-['Noto_Serif'] text-[28px] font-bold"
+      >
+        Testimonials
+      </h2>
+      <section class="splide mt-8" aria-label="testimonials">
+        <div class="splide__track">
+          <ul class="splide__list">
+            <li class="splide__slide px-2">
+              <div
+                class="flex w-[268px] pt-14 pb-8 px-8 flex-col items-center gap-6 rounded-[32px] mt-8 relative h-[260px]"
+                style="
+                  background: rgba(255, 255, 255, 0.13);
+                  backdrop-filter: blur(7.5px);
+                  border: 2.252px solid rgba(255, 255, 255, 0.77);
+                "
+              >
+                <p class="text-white text-center font-['Noto_Serif'] text-xs">
+                  "Bali Home Lab made getting my lab tests done so easy. The
+                  staff was professional and friendly, and I didn’t have to
+                  leave my house. My results came back quickly, and I felt well
+                  taken care of throughout the process."
+                </p>
+                <p class="text-white text-center font-['Noto_Serif'] text-xl">
+                  Stephanie Stranko
+                </p>
+                <img
+                  src="assets/images/testimonial1.svg"
+                  alt="testimonials"
+                  class="absolute -top-8 w-[66px] h-[66px]"
+                />
+              </div>
+            </li>
+            <li class="splide__slide px-2">
+              <div
+                class="flex w-[268px] pt-14 pb-8 px-8 flex-col items-center gap-6 rounded-[32px] mt-8 relative h-[260px]"
+                style="
+                  background: rgba(255, 255, 255, 0.13);
+                  backdrop-filter: blur(7.5px);
+                  border: 2.252px solid rgba(255, 255, 255, 0.77);
+                "
+              >
+                <p class="text-white text-center font-['Noto_Serif'] text-xs">
+                  "Getting my lab tests done at home was a game-changer. The
+                  staff was so compassionate, and I felt comfortable throughout.
+                  Bali Home Lab is now my go-to for all my medical needs!"
+                </p>
+                <p class="text-white text-center font-['Noto_Serif'] text-xl">
+                  Grace Smith
+                </p>
+                <img
+                  src="assets/images/testimonial3.svg"
+                  alt="testimonials"
+                  class="absolute -top-8 w-[66px] h-[66px]"
+                />
+              </div>
+            </li>
+            <li class="splide__slide px-2">
+              <div
+                class="flex w-[268px] pt-14 pb-8 px-8 flex-col items-center gap-6 rounded-[32px] mt-8 relative h-[260px]"
+                style="
+                  background: rgba(255, 255, 255, 0.13);
+                  backdrop-filter: blur(7.5px);
+                  border: 2.252px solid rgba(255, 255, 255, 0.77);
+                "
+              >
+                <p class="text-white text-center font-['Noto_Serif'] text-xs">
+                  "I love the convenience of Bali Home Lab’s home lab services.
+                  The technician arrived on time, and the whole experience was
+                  stress-free. I highly recommend this service for anyone with a
+                  busy schedule."
+                </p>
+                <p class="text-white text-center font-['Noto_Serif'] text-xl">
+                  Kevin Lory
+                </p>
+                <img
+                  src="assets/images/testimonial2.svg"
+                  alt="testimonials"
+                  class="absolute -top-8 w-[66px] h-[66px]"
+                />
+              </div>
+            </li>
+          </ul>
+        </div>
+      </section>
+    </div>
+
+    <div
+      class="hidden md:block py-10 md:pb-16 bg-[url('assets/images/bg-testimonials-mobile.png')] bg-cover bg-center"
+    >
+      <div class="container m-auto">
+        <h2
+          class="text-white text-center font-['Noto_Serif'] text-[40px] font-bold mb-6"
+        >
+          Testimonials
+        </h2>
+        <div class="inline-flex items-start gap-8">
+          <div
+            class="flex w-full pt-14 pb-8 px-8 flex-col items-center gap-6 rounded-[32px] mt-8 relative h-full"
+            style="
+              background: rgba(255, 255, 255, 0.13);
+              backdrop-filter: blur(7.5px);
+              border: 2.252px solid rgba(255, 255, 255, 0.77);
+            "
+          >
+            <p class="text-white text-center font-['Noto_Serif'] text-xs">
+              "Bali Home Lab made getting my lab tests done so easy. The staff
+              was professional and friendly, and I didn’t have to leave my
+              house. My results came back quickly, and I felt well taken care of
+              throughout the process."
+            </p>
+            <p class="text-white text-center font-['Noto_Serif'] text-xl">
+              Stephanie Stranko
+            </p>
+            <img
+              src="assets/images/testimonial1.svg"
+              alt="testimonials"
+              class="absolute -top-8 w-[66px] h-[66px]"
+            />
+          </div>
+          <div
+            class="flex w-full pt-14 pb-8 px-8 flex-col items-center self-stretch gap-6 rounded-[32px] mt-8 relative h-full"
+            style="
+              background: rgba(255, 255, 255, 0.13);
+              backdrop-filter: blur(7.5px);
+              border: 2.252px solid rgba(255, 255, 255, 0.77);
+              align-self: stretch;
+            "
+          >
+            <p
+              class="text-white text-center font-['Noto_Serif'] text-xs h-full"
+              style="flex: 1 0 0; align-self: stretch"
+            >
+              "I love the convenience of Bali Home Lab’s home lab services. The
+              technician arrived on time, and the whole experience was
+              stress-free. I highly recommend this service for anyone with a
+              busy schedule."
+            </p>
+            <p class="text-white text-center font-['Noto_Serif'] text-xl">
+              Kevin Lory
+            </p>
+            <img
+              src="assets/images/testimonial2.svg"
+              alt="testimonials"
+              class="absolute -top-8 w-[66px] h-[66px]"
+            />
+          </div>
+          <div
+            class="flex w-full pt-14 pb-8 px-8 flex-col items-center gap-6 rounded-[32px] mt-8 relative h-full"
+            style="
+              background: rgba(255, 255, 255, 0.13);
+              backdrop-filter: blur(7.5px);
+              border: 2.252px solid rgba(255, 255, 255, 0.77);
+            "
+          >
+            <p class="text-white text-center font-['Noto_Serif'] text-xs">
+              "Getting my lab tests done at home was a game-changer. The staff
+              was so compassionate, and I felt comfortable throughout. Bali Home
+              Lab is now my go-to for all my medical needs!"
+            </p>
+            <p class="text-white text-center font-['Noto_Serif'] text-xl">
+              Grace Smith
+            </p>
+            <img
+              src="assets/images/testimonial3.svg"
+              alt="testimonials"
+              class="absolute -top-8 w-[66px] h-[66px]"
+            />
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- End Testimonials -->
+
+    <!-- Contact -->
+    <div class="px-10 py-10 md:py-16 bg-white">
+      <div class="container m-auto">
+        <h2
+          class="text-[#006D78] text-center font-['Noto_Serif'] text-[18px] md:text-[32px] font-bold"
+        >
+          Experience the future of healthcare with Bali Home Lab where quality
+          meets convenience
+        </h2>
+        <form class="mt-10">
+          <div class="grid gap-6 mb-6 md:grid-cols-3">
+            <div>
+              <label
+                for="name"
+                class="block mb-2 text-sm md:text-xl font-medium md:font-normal md:text-[#5B5A5A] text-gray-900"
+                >Name</label
+              >
+              <input
+                type="text"
+                id="name"
+                class="border-none text-gray-900 text-sm md:text-lg rounded-full block w-full px-4 py-2.5"
+                style="background: #f4f4f4"
+                placeholder="John"
+                required
+              />
+            </div>
+            <div>
+              <label
+                for="address"
+                class="block mb-2 text-sm md:text-xl font-medium md:font-normal md:text-[#5B5A5A] text-gray-900"
+                >Address</label
+              >
+              <input
+                type="text"
+                id="address"
+                class="border-none text-gray-900 text-sm md:text-lg rounded-full block w-full px-4 py-2.5"
+                style="background: #f4f4f4"
+                placeholder="Jl. Legian No.369 X"
+                required
+              />
+            </div>
+            <div>
+              <label
+                for="service"
+                class="block mb-2 text-sm md:text-xl font-medium md:font-normal md:text-[#5B5A5A] text-gray-900"
+                >Select Service</label
+              >
+              <select
+                id="service"
+                class="bg-[#f4f4f4] border-none text-gray-900 text-sm md:text-lg rounded-full block w-full px-4 py-2.5"
+              >
+                <option selected disabled>Choose a service</option>
+                <option value="General Medical Check-Up">
+                  General Medical Check-Up
+                </option>
+                <option value="Heart Health Screening">
+                  Heart Health Screening
+                </option>
+                <option value="COVID-19 Testing">COVID-19 Testing</option>
+                <option value="STD Testing">STD Testing</option>
+                <option value="Diabetes Panel">Diabetes Panel</option>
+                <option value="Thyroid Function Test">
+                  Thyroid Function Test
+                </option>
+                <option value="Allergy Testing">Allergy Testing</option>
+                <option value="Fecal Analysis">Fecal Analysis</option>
+                <option value="Sputum Analysis">Sputum Analysis</option>
+              </select>
+            </div>
+          </div>
+          <div class="flex items-center justify-center gap-2 w-full">
+            <button
+              type="button"
+              class="text-white font-['poppins'] font-medium rounded-full text-xs md:text-xl px-5 py-2.5 w-full bg-green-400 hover:bg-green-500"
+            >
+              <div class="flex justify-center items-center gap-3">
+                <i class="ph ph-whatsapp-logo text-base md:text-3xl"></i>
+                <p>Whatsapp</p>
+              </div>
+            </button>
+            <button
+              type="button"
+              class="text-white font-['poppins'] font-medium rounded-full text-xs md:text-xl px-5 py-2.5 w-full bg-blue-400 hover:bg-blue-500"
+            >
+              <div class="flex justify-center items-center gap-3">
+                <i class="ph ph-telegram-logo text-base md:text-3xl"></i>
+                <p>Telegram</p>
+              </div>
+            </button>
+          </div>
+        </form>
+      </div>
+    </div>
+    <!-- End Contact -->
+
+    <!-- Footer -->
+    <div class="px-10 py-10 bg-[#00B2AE]">
+      <div class="container m-auto">
+        <div class="flex justify-between items-center md:mb-11">
+          <img
+            src="assets/images/logo-footer-mobile.svg"
+            alt="logo"
+            class="block md:hidden"
+          />
+          <img
+            src="assets/images/logo-footer-desk.svg"
+            alt="logo"
+            class="hidden md:block"
+          />
+          <div class="flex flex-col gap-2">
+            <p
+              class="text-right text-white font-['poppins'] text-[10px] md:text-xs"
+            >
+              Member of Aliansi <br />Telemedik Indonesia
+            </p>
+            <img
+              src="assets/images/logo-atensi-mobile.svg"
+              alt="atensi"
+              class="block md:hidden"
+            />
+            <img
+              src="assets/images/logo-atensi-desk.svg"
+              alt="atensi"
+              class="hidden md:block"
+            />
+          </div>
+        </div>
+
+        <p class="block md:hidden text-white font-['poppins'] text-xs my-3">
+          <span class="font-bold">Clinic Cepat Sehat</span> is a clinic
+          registered under the laws of Indonesia with the registration number
+          04102100035090001.
+        </p>
+        <p class="hidden md:block text-white font-['poppins'] text-base my-3">
+          <span class="font-bold">Clinic Cepat Sehat</span> is a clinic
+          registered under the laws of Indonesia with the registration number
+          04102100035090001.
+        </p>
+        <div class="flex flex-col gap-3">
+          <p class="block md:hidden text-white font-['poppins'] text-xs">
+            Enjoy our homecare service from the comfort of your home. We are
+            also available offline at:
+          </p>
+          <p class="hidden md:block text-white font-['poppins'] text-base">
+            Enjoy our homecare service from the comfort of your home. We are
+            also available offline at:
+          </p>
+          <ul class="block md:hidden ps-3.5 list-disc text-white">
+            <li class="font-['poppins'] text-xs md:text-sm">
+              <p class="font-bold">Seminyak Address</p>
+              <p>
+                Jl. Legian No.369 X, Legian, Kuta, Badung Regency, Bali 80361
+              </p>
+              <div class="flex gap-1 items-center">
+                <img src="assets/images/icon-maps.svg" alt="maps" />
+                <a href="#" target="_blank" class="font-bold underline"
+                  >Find Out Why Patients Love Us!</a
+                >
+              </div>
+            </li>
+            <li class="font-['poppins'] text-xs md:text-sm mt-3">
+              <p class="font-bold">Jimbaran Address</p>
+              <p>
+                Jl. Puri Gading, Jimbaran, South Kuta, Badung Regency, Bali
+                80361
+              </p>
+              <div class="flex gap-1 items-center">
+                <img src="assets/images/icon-maps.svg" alt="maps" />
+                <a href="#" target="_blank" class="font-bold underline"
+                  >Discover Our Patient Stories!</a
+                >
+              </div>
+            </li>
+            <li class="font-['poppins'] text-xs md:text-sm mt-3">
+              <p class="font-bold">Sanur Address</p>
+              <p>
+                Jl. Batur Sari No.33, Sanur Kauh, Denpasar Selatan, Kota
+                Denpasar, Bali 80228
+              </p>
+              <div class="flex gap-1 items-center">
+                <img src="assets/images/icon-maps.svg" alt="maps" />
+                <a href="#" target="_blank" class="font-bold underline"
+                  >Discover Our Patient Stories!</a
+                >
+              </div>
+            </li>
+            <li class="font-['poppins'] text-xs md:text-sm mt-3">
+              <p class="font-bold">Canggu Address</p>
+              <p>
+                Jl. Raya Canggu No.12, Canggu, Kec. Kuta Utara, Kabupaten
+                Badung, Badung, Bali 80351
+              </p>
+              <div class="flex gap-1 items-center">
+                <img src="assets/images/icon-maps.svg" alt="maps" />
+                <a href="#" target="_blank" class="font-bold underline"
+                  >Discover Our Patient Stories!</a
+                >
+              </div>
+            </li>
+            <li class="font-['poppins'] text-xs md:text-sm mt-3">
+              <p class="font-bold">Pererenan Address</p>
+              <p>
+                Jl. Jantuk Angsa Desa No.20, Pererenan, Kec. Mengwi, Kabupaten
+                Badung, Bali 80351
+              </p>
+              <div class="flex gap-1 items-center">
+                <img src="assets/images/icon-maps.svg" alt="maps" />
+                <a href="#" target="_blank" class="font-bold underline"
+                  >Discover Our Patient Stories!</a
+                >
+              </div>
+            </li>
+            <li class="font-['poppins'] text-xs md:text-sm mt-3">
+              <p class="font-bold">Jakarta Address</p>
+              <p>
+                Jl. Peternakan No. 13, Kel. Tengah, Kec. Kramatjati, Kota Adm.
+                Jakarta Timur, DKI Jakarta 13510
+              </p>
+              <div class="flex gap-1 items-center">
+                <img src="assets/images/icon-maps.svg" alt="maps" />
+                <a href="#" target="_blank" class="font-bold underline"
+                  >Discover Our Patient Stories!</a
+                >
+              </div>
+            </li>
+          </ul>
+          <div class="hidden md:block px-[40px]">
+            <div class="flex gap-11">
+              <ul class="ps-3.5 list-disc text-white">
+                <li class="font-['poppins'] text-xs md:text-sm">
+                  <p class="font-bold">Seminyak Address</p>
+                  <p>
+                    Jl. Legian No.369 X, Legian, Kuta, Badung Regency, Bali
+                    80361
+                  </p>
+                  <div class="flex gap-1 items-center">
+                    <img src="assets/images/icon-maps.svg" alt="maps" />
+                    <a href="#" target="_blank" class="font-bold underline"
+                      >Find Out Why Patients Love Us!</a
+                    >
+                  </div>
+                </li>
+                <li class="font-['poppins'] text-xs md:text-sm mt-3">
+                  <p class="font-bold">Jimbaran Address</p>
+                  <p>
+                    Jl. Puri Gading, Jimbaran, South Kuta, Badung Regency, Bali
+                    80361
+                  </p>
+                  <div class="flex gap-1 items-center">
+                    <img src="assets/images/icon-maps.svg" alt="maps" />
+                    <a href="#" target="_blank" class="font-bold underline"
+                      >Discover Our Patient Stories!</a
+                    >
+                  </div>
+                </li>
+                <li class="font-['poppins'] text-xs md:text-sm mt-3">
+                  <p class="font-bold">Sanur Address</p>
+                  <p>
+                    Jl. Batur Sari No.33, Sanur Kauh, Denpasar Selatan, Kota
+                    Denpasar, Bali 80228
+                  </p>
+                  <div class="flex gap-1 items-center">
+                    <img src="assets/images/icon-maps.svg" alt="maps" />
+                    <a href="#" target="_blank" class="font-bold underline"
+                      >Discover Our Patient Stories!</a
+                    >
+                  </div>
+                </li>
+              </ul>
+              <ul class="ps-3.5 list-disc text-white">
+                <li class="font-['poppins'] text-xs md:text-sm mt-3">
+                  <p class="font-bold">Canggu Address</p>
+                  <p>
+                    Jl. Raya Canggu No.12, Canggu, Kec. Kuta Utara, Kabupaten
+                    Badung, Badung, Bali 80351
+                  </p>
+                  <div class="flex gap-1 items-center">
+                    <img src="assets/images/icon-maps.svg" alt="maps" />
+                    <a href="#" target="_blank" class="font-bold underline"
+                      >Discover Our Patient Stories!</a
+                    >
+                  </div>
+                </li>
+                <li class="font-['poppins'] text-xs md:text-sm mt-3">
+                  <p class="font-bold">Pererenan Address</p>
+                  <p>
+                    Jl. Jantuk Angsa Desa No.20, Pererenan, Kec. Mengwi,
+                    Kabupaten Badung, Bali 80351
+                  </p>
+                  <div class="flex gap-1 items-center">
+                    <img src="assets/images/icon-maps.svg" alt="maps" />
+                    <a href="#" target="_blank" class="font-bold underline"
+                      >Discover Our Patient Stories!</a
+                    >
+                  </div>
+                </li>
+                <li class="font-['poppins'] text-xs md:text-sm mt-3">
+                  <p class="font-bold">Jakarta Address</p>
+                  <p>
+                    Jl. Peternakan No. 13, Kel. Tengah, Kec. Kramatjati, Kota
+                    Adm. Jakarta Timur, DKI Jakarta 13510
+                  </p>
+                  <div class="flex gap-1 items-center">
+                    <img src="assets/images/icon-maps.svg" alt="maps" />
+                    <a href="#" target="_blank" class="font-bold underline"
+                      >Discover Our Patient Stories!</a
+                    >
+                  </div>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="flex justify-between items-center mt-4 md:mt-8">
+          <a href="#" class="flex gap-1 items-center">
+            <i class="ph-fill ph-phone text-white"></i>
+            <p
+              class="text-white font-['poppins'] text-xs md:text-xl font-semibold"
+            >
+              +62 858 1929 2434
+            </p>
+          </a>
+          <div class="flex gap-1">
+            <a href=""
+              ><img
+                src="assets/images/icon-world.svg"
+                alt="icon-world"
+                class="md:w-9 md:h-9"
+            /></a>
+            <a href=""
+              ><img
+                src="assets/images/icon-facebook.svg"
+                alt="icon-facebook"
+                class="md:w-9 md:h-9"
+            /></a>
+            <a href=""
+              ><img
+                src="assets/images/icon-ig.svg"
+                alt="icon-ig"
+                class="md:w-9 md:h-9"
+            /></a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div
+      class="flex bg-white font-['poppins'] text-[10px] md:text-base text-[#696969] text-center items-center justify-center py-3 md:py-6"
+    >
+      Copyright © 2024 Bali Home Lab. All Rights Reserved.
+    </div>
+    <!-- End Footer -->
+
+    <!-- Floating Botton -->
+    <div
+      class="flex flex-col gap-4"
+      style="position: fixed; bottom: 20px; right: 20px"
+    >
+      <a
+        href="#"
+        class="flex p-3 rounded-full w-fit bg-green-400"
+        ><i class="ph ph-whatsapp-logo text-2xl text-white"></i
+      ></a>
+      <a
+        href="#"
+        class="flex p-3 rounded-full w-fit bg-blue-400"
+        ><i class="ph ph-telegram-logo text-2xl text-white"></i
+      ></a>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/flowbite@2.5.2/dist/flowbite.min.js"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/js/splide.min.js"></script>
+
+    <script>
+      var splide = new Splide(".splide", {
+        type: "loop",
+        focus: "center",
+        autoWidth: true,
+        arrows: false,
+        pagination: false,
+      });
+
+      splide.mount();
+    </script>
+  </body>
+</html>
