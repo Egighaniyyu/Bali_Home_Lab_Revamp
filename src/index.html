@@ -190,12 +190,11 @@
       </h2>
       <div class="flex flex-col gap-6 mt-7">
         <div class="flex w-full gap-8">
-          <div class="flex flex-col gap-2 w-6/12">
+          <div class="flex flex-col gap-3 w-6/12 items-center">
             <img
-              data-tooltip-placement="bottom"
-              data-tooltip-target="tooltip-general-mcu"
               src="assets/images/icon-general-mcu.svg"
               alt="icon-general-mcu"
+              class="w-28 h-28"
             />
             <div
               id="tooltip-general-mcu"
@@ -227,13 +226,19 @@
             >
               General Medical Check-Up
             </p>
-          </div>
-          <div class="flex flex-col gap-2 w-6/12">
-            <img
+            <button
+              class="bg-white px-4 py-1.5 text-orange-500 font-medium rounded-md text-xs font-['Noto_Serif']"
               data-tooltip-placement="bottom"
-              data-tooltip-target="heart-health-screening"
+              data-tooltip-target="tooltip-general-mcu"
+            >
+              See Detail
+            </button>
+          </div>
+          <div class="flex flex-col gap-3 w-6/12 items-center">
+            <img
               src="assets/images/icon-heart-health-screening.svg"
               alt="icon-general-mcu"
+              class="w-28 h-28"
             />
             <div
               id="heart-health-screening"
@@ -264,22 +269,28 @@
             >
               Heart Health Screening
             </p>
+            <button
+              class="bg-white px-4 py-1.5 text-orange-500 font-medium rounded-md text-xs font-['Noto_Serif']"
+              data-tooltip-placement="bottom"
+              data-tooltip-target="heart-health-screening"
+            >
+              See Detail
+            </button>
           </div>
         </div>
         <div class="flex w-full gap-8">
-          <div class="flex flex-col gap-2 w-6/12">
+          <div class="flex flex-col gap-3 w-6/12 items-center">
             <img
-              data-tooltip-placement="bottom"
-              data-tooltip-target="covid-19_testing"
               src="assets/images/icon-covid19.svg"
               alt="icon-covid19"
+              class="w-28 h-28"
             />
             <div
               id="covid-19_testing"
               role="tooltip"
               class="absolute z-10 invisible inline-block px-6 py-6 transition-opacity duration-300 bg-white rounded-lg shadow-sm opacity-0 tooltip"
             >
-              <div class="flex flex-col gap-4">
+              <div class="flex flex-col gap-3">
                 <h5
                   class="text-[#128894] text-center font-['Noto_sans'] text-sm font-bold"
                 >
@@ -302,20 +313,26 @@
             >
               COVID-19 Testing
             </p>
-          </div>
-          <div class="flex flex-col gap-2 w-6/12">
-            <img
+            <button
+              class="bg-white px-4 py-1.5 text-orange-500 font-medium rounded-md text-xs font-['Noto_Serif']"
               data-tooltip-placement="bottom"
-              data-tooltip-target="std_testing"
+              data-tooltip-target="covid-19_testing"
+            >
+              See Detail
+            </button>
+          </div>
+          <div class="flex flex-col gap-3 w-6/12 items-center">
+            <img
               src="assets/images/icon-std.svg"
               alt="icon-std"
+              class="w-28 h-28"
             />
             <div
               id="std_testing"
               role="tooltip"
               class="absolute z-10 invisible inline-block px-6 py-6 transition-opacity duration-300 bg-white rounded-lg shadow-sm opacity-0 tooltip"
             >
-              <div class="flex flex-col gap-4">
+              <div class="flex flex-col gap-3">
                 <h5
                   class="text-[#128894] text-center font-['Noto_sans'] text-sm font-bold"
                 >
@@ -338,15 +355,21 @@
             >
               STD Testing
             </p>
+            <button
+              class="bg-white px-4 py-1.5 text-orange-500 font-medium rounded-md text-xs font-['Noto_Serif']"
+              data-tooltip-placement="bottom"
+              data-tooltip-target="std_testing"
+            >
+              See Detail
+            </button>
           </div>
         </div>
         <div class="flex w-full gap-8">
-          <div class="flex flex-col gap-2 w-6/12">
+          <div class="flex flex-col gap-3 w-6/12 items-center">
             <img
-              data-tooltip-placement="bottom"
-              data-tooltip-target="diabetes_panel"
               src="assets/images/icon-diabetes.svg"
               alt="icon-diabetes"
+              class="w-28 h-28"
             />
             <div
               id="diabetes_panel"
@@ -377,13 +400,19 @@
             >
               Diabetes Panel
             </p>
-          </div>
-          <div class="flex flex-col gap-2 w-6/12">
-            <img
+            <button
+              class="bg-white px-4 py-1.5 text-orange-500 font-medium rounded-md text-xs font-['Noto_Serif']"
               data-tooltip-placement="bottom"
-              data-tooltip-target="thyroid"
+              data-tooltip-target="diabetes_panel"
+            >
+              See Detail
+            </button>
+          </div>
+          <div class="flex flex-col gap-3 w-6/12 items-center">
+            <img
               src="assets/images/icon-thyroid.svg"
               alt="icon-thyroid"
+              class="w-28 h-28"
             />
             <div
               id="thyroid"
@@ -412,17 +441,23 @@
             <p
               class="text-white text-center font-['Noto_Serif'] text-sm font-bold"
             >
-              Thyroid Function Test
+              Thyroid Function
             </p>
+            <button
+              class="bg-white px-4 py-1.5 text-orange-500 font-medium rounded-md text-xs font-['Noto_Serif']"
+              data-tooltip-placement="bottom"
+              data-tooltip-target="thyroid"
+            >
+              See Detail
+            </button>
           </div>
         </div>
         <div class="flex w-full gap-8">
-          <div class="flex flex-col gap-2 w-6/12">
+          <div class="flex flex-col gap-3 w-6/12 items-center">
             <img
-              data-tooltip-placement="bottom"
-              data-tooltip-target="allergy_testing"
               src="assets/images/icon-allergy.svg"
               alt="icon-allergy"
+              class="w-28 h-28"
             />
             <div
               id="allergy_testing"
@@ -452,22 +487,30 @@
             <p
               class="text-white text-center font-['Noto_Serif'] text-sm font-bold"
             >
-              Allergy testing
+              Allergy Testing
             </p>
+            <button
+              class="bg-white px-4 py-1.5 text-orange-500 font-medium rounded-md text-xs font-['Noto_Serif']"
+              data-tooltip-placement="bottom"
+              data-tooltip-target="allergy_testing"
+            >
+              See Detail
+            </button>
           </div>
-          <div class="flex flex-col gap-2 w-6/12">
+          <div class="flex flex-col gap-3 w-6/12 items-center">
             <img
               data-tooltip-placement="bottom"
               data-tooltip-target="Fecal Analysis"
               src="assets/images/icon-fecal.svg"
               alt="icon-fecal"
+              class="w-28 h-28"
             />
             <div
               id="Fecal Analysis"
               role="tooltip"
               class="absolute z-10 invisible inline-block px-6 py-6 transition-opacity duration-300 bg-white rounded-lg shadow-sm opacity-0 tooltip"
             >
-              <div class="flex flex-col gap-4">
+              <div class="flex flex-col gap-3">
                 <h5
                   class="text-[#128894] text-center font-['Noto_sans'] text-sm font-bold"
                 >
@@ -492,22 +535,28 @@
             >
               Fecal Analysis
             </p>
+            <button
+              class="bg-white px-4 py-1.5 text-orange-500 font-medium rounded-md text-xs font-['Noto_Serif']"
+              data-tooltip-placement="bottom"
+              data-tooltip-target="Fecal Analysis"
+            >
+              See Detail
+            </button>
           </div>
         </div>
         <div class="flex w-full gap-8">
-          <div class="flex flex-col gap-2 w-6/12">
+          <div class="flex flex-col gap-3 w-6/12 items-center">
             <img
-              data-tooltip-placement="bottom"
-              data-tooltip-target="sputum_analysis"
               src="assets/images/icon-sputum.svg"
               alt="icon-sputum"
+              class="w-28 h-28"
             />
             <div
               id="sputum_analysis"
               role="tooltip"
               class="absolute z-10 invisible inline-block px-6 py-6 transition-opacity duration-300 bg-white rounded-lg shadow-sm opacity-0 tooltip"
             >
-              <div class="flex flex-col gap-4">
+              <div class="flex flex-col gap-3">
                 <h5
                   class="text-[#128894] text-center font-['Noto_sans'] text-sm font-bold"
                 >
@@ -532,20 +581,26 @@
             >
               Sputum Analysis
             </p>
-          </div>
-          <div class="flex flex-col gap-2 w-6/12">
-            <img
+            <button
+              class="bg-white px-4 py-1.5 text-orange-500 font-medium rounded-md text-xs font-['Noto_Serif']"
               data-tooltip-placement="bottom"
-              data-tooltip-target="drugs_testing"
+              data-tooltip-target="sputum_analysis"
+            >
+              See Detail
+            </button>
+          </div>
+          <div class="flex flex-col gap-3 w-6/12 items-center">
+            <img
               src="assets/images/icon-drugs.svg"
               alt="icon-sputum"
+              class="w-28 h-28"
             />
             <div
               id="drugs_testing"
               role="tooltip"
               class="absolute z-10 invisible inline-block px-6 py-6 transition-opacity duration-300 bg-white rounded-lg shadow-sm opacity-0 tooltip"
             >
-              <div class="flex flex-col gap-4">
+              <div class="flex flex-col gap-3">
                 <h5
                   class="text-[#128894] text-center font-['Noto_sans'] text-sm font-bold"
                 >
@@ -571,6 +626,13 @@
             >
               Drugs Testing
             </p>
+            <button
+              class="bg-white px-4 py-1.5 text-orange-500 font-medium rounded-md text-xs font-['Noto_Serif']"
+              data-tooltip-placement="bottom"
+              data-tooltip-target="drugs_testing"
+            >
+              See Detail
+            </button>
           </div>
         </div>
       </div>
@@ -1444,14 +1506,10 @@
       class="flex flex-col gap-4"
       style="position: fixed; bottom: 20px; right: 20px"
     >
-      <a
-        href="#"
-        class="flex p-3 rounded-full w-fit bg-green-400"
+      <a href="#" class="flex p-3 rounded-full w-fit bg-green-400"
         ><i class="ph ph-whatsapp-logo text-2xl text-white"></i
       ></a>
-      <a
-        href="#"
-        class="flex p-3 rounded-full w-fit bg-blue-400"
+      <a href="#" class="flex p-3 rounded-full w-fit bg-blue-400"
         ><i class="ph ph-telegram-logo text-2xl text-white"></i
       ></a>
     </div>
